@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # spec de experimentação
-spec.cy.js
+spec.cy.js/ C:\Repositorio\teste-ui-cypress\cypress\e2e
