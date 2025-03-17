@@ -6,9 +6,6 @@
             cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')           
         });
 
-        afterEach(() => {
-            cy.screenshot()
-        });
 
         it('Deve fazer login com sucesso', () => {
         
