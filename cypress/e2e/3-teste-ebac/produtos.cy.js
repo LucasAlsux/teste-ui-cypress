@@ -3,7 +3,7 @@
 describe('Teste da tela de produtos', () => {
     
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+        cy.visit('produtos')
     });
     
     it('Deve encontrar um produto e acessar a sua página', () => {
