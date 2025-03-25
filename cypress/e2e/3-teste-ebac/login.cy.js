@@ -11,7 +11,7 @@ const perfil = require('../../fixtures/dados.json')
 
         it('Deve fazer login com sucesso', () => {
         
-        cy.get('#username').type('lolo@gmail.com')
+        cy.get('#username').type('lolo@gmail.com' , {log: false})
         cy.get('#password').type('lolo123&')
         cy.get('.woocommerce-form > .button').click()
         cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, lolo (não é lolo? Sair)')
