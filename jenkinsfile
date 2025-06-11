@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('start') {
             steps {
-             git branch: 'pipeline', url: 'https://github.com/LucasAlsux/teste-ui-cypress.git'
+            
+             git branch: 'main', url: 'https://github.com/LucasAlsux/teste-ui-cypress.git'
              bat 'npm install'
             }
         }
