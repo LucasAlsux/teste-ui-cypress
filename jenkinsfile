@@ -9,10 +9,18 @@ pipeline {
              bat 'npm install'
             }
         }
+        
+        stage('Subir servidor') {
+            steps {
+            bat 'start /b npx serverest'
+            }
+
+        }
+        
         stage('test') {
             steps {
-               bat 'set NO_COLOR=1'
-               bat 'npm test'
+            bat 'set NO_COLOR=1'
+            bat 'npm test'
             }
         }
     }
