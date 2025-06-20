@@ -8,15 +8,7 @@ pipeline {
              git branch: 'main', url: 'https://github.com/LucasAlsux/teste-ui-cypress.git'
              bat 'npm install'
             }
-        }
-        
-        stage('Subir servidor') {
-            steps {
-            bat 'start /b npx serverest'
-            }
-
-        }
-        
+        }       
         stage('test') {
             steps {
             bat 'set NO_COLOR=1'
